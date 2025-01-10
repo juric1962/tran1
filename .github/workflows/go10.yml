@@ -3,6 +3,9 @@ name: Go
 on:
   push:
     branches: ["main"]
+  pull_request:
+    # Указывает, что нужно запускать рабочий процесс, только если событие относится к ветке main
+    branches: [ "main" ]
 
 jobs:
   
